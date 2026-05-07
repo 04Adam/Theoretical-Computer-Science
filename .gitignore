@@ -3,5 +3,6 @@
 !*.cpp
 !*.sql
 /MP/*
-!/MP/*.cpp
 !/MP/PDFs/
+!/MP/PDFs/**
+!/MP/*.cpp
