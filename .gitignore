@@ -1,6 +1,7 @@
 *
-!/*
+!*/
 !*.cpp
 !*.sql
-!/MP/
+/MP/*
+!/MP/*.cpp
 !/MP/PDFs/
