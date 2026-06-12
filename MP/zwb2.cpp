@@ -51,7 +51,7 @@ int main(){
     ios_base::sync_with_stdio(NULL);
     cin.tie(NULL);
     int z;
-    if(!(cin >> z)) return 0;
+    cin >> z;
     while(z--){
         int n,m;
         cin >> n >> m;
@@ -151,15 +151,13 @@ int main(){
             clear(n,m);
             continue;
         }
-        
         int start_node = 1;
         for(int i = 1;i<=n;i++){
-            if(out[i]!=0){
+            if(!G[i].empty()){
                 start_node = i;
                 break;
             }
-        }
-        
+        } 
         dfs(start_node);
         
         if(Ans.size()!=m+1){
